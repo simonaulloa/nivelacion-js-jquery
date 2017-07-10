@@ -21,9 +21,13 @@ $(document).ready( function(){
 * marcado el atributo "highlighted" como TRUE
 */
 function renderHighlightedRecipes(recipesArray) {
+	$(".title-callout").mouseenter(function(){
+        $("p").html("<h1>NUEVAS RECETAS<h1>");
+    });
 	console.log('Recipes: ', recipesArray);
 }
 
+		
 /*
 * Función que se encarga de pintar UNA recetas que tenga 
 * marcado el atributo "highlighted" como TRUE
